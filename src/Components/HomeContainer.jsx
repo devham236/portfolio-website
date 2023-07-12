@@ -31,7 +31,7 @@ const HomeContainer = () => {
             className="lg:text-5xl sm:text-xl font-extrabold dark:text-dark_tc mb-2"
             ref={element}
           ></h1>
-          <p className="dark:text-dark_tc my-4">Lorem ipsum dolor sit amet.</p>
+          <p className="dark:text-dark_tc my-4">Welcome to my Website.</p>
           <Link
             to="contact"
             className="cursor-pointer"
