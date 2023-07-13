@@ -19,7 +19,7 @@ const SkillsContainer = () => {
       className="lg:w-full lg:h-[100vh] sm:w-screen sm:h-screen duration-300 dark:bg-dark_blue flex items-center justify-center sm:px-1 lg:px-0"
       id="skills"
     >
-      <div className="lg:w-[1200px] sm:w-full sm:h-[80%] md:h-full flex flex-col items-center justify-around">
+      <div className="lg:w-[1200px] sm:w-full sm:h-[80%] md:h-full flex flex-col items-center justify-around lg:py-20 md:py-20 sm:py-5">
         <div className="flex flex-col items-center sm:mb-8 lg:mb-0">
           <h1 className="lg:text-3xl sm:text-xl font-extrabold mb-1 dark:text-dark_tc">
             Skills
@@ -104,11 +104,11 @@ const SkillsContainer = () => {
             </div>
           </div>
 
-          <div className="lg:w-[45%] lg:h-[300px] sm:w-full sm:h-[200px] group relative rounded-lg">
+          <div className="lg:w-[45%] lg:h-[300px] sm:w-full sm:h-[200px] group relative rounded-lg max-w-[540px]">
             <img
               src={slides[currentIndex].url}
               alt=""
-              className="w-full h-full object-fit rounded-lg"
+              className="w-full h-full object-cover rounded-lg"
             />
             <div
               className="cursor-pointer text-2xl hidden group-hover:block  absolute top-[50%] translate-x-0 translate-y-[-50%] right-3"

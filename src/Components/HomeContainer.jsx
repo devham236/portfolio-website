@@ -25,8 +25,8 @@ const HomeContainer = () => {
       className="lg:w-full lg:h-[100vh] sm:w-screen sm:h-[calc(100vh-64px)] dark:bg-dark_blue flex items-center justify-center duration-300 z-0 sm:px-1 lg:px-0"
       id="home"
     >
-      <div className="lg:w-[1200px] lg:h-full sm:w-full lg:flex lg:items-center lg:justify-between ">
-        <div className="lg:max-w-[60%] sm:w-full flex sm:flex-col sm:items-center lg:items-start sm:justify-center">
+      <div className="lg:w-[1200px] lg:h-full sm:w-full flex lg:items-center lg:justify-between  lg:flex-row sm:flex-col sm:items-center">
+        <div className="lg:max-w-[60%] sm:w-full flex sm:flex-col sm:items-center lg:items-start sm:justify-center ">
           <h1
             className="lg:text-5xl sm:text-xl font-extrabold dark:text-dark_tc mb-2"
             ref={element}
