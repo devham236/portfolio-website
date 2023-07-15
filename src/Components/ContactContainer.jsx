@@ -44,7 +44,7 @@ const ContactContainer = () => {
               </div>
               <form action="https://getform.io/f/928fe757-3dbe-4a46-9eca-4a08ebb07403" method='POST' className='flex flex-col'>
                 <input required type="text" placeholder="Name" name='name'  className='mb-4 lg:p-3 sm:p-2 sm:placeholder:text-sm lg:placeholder:text-base rounded-lg outline-none dark:bg-[#333333] dark:text-dark_tc'/>
-                <input required type="email" placeholder="Email" name='email'  className='mb-4 lg:p-3 sm:p-2 placeholder:text-sm rounded-lg outline-none dark:bg-[#333333] dark:text-dark_tc'/>
+                <input required type="email" placeholder="E-Mail" name='email'  className='mb-4 lg:p-3 sm:p-2 placeholder:text-sm rounded-lg outline-none dark:bg-[#333333] dark:text-dark_tc'/>
                 <textarea required className='lg:p-3 sm:p-2 placeholder:text-sm rounded-lg outline-none dark:bg-[#333333] dark:text-dark_tc resize-none' placeholder='Message' name='message' cols="30" rows="10"></textarea>
                 <button type='submit' className='uppercase border-2 mt-4 border-orange text-orange lg:px-4 lg:py-2 sm:py-1 rounded-lg duration-300 hover:bg-orange hover:text-dark_tc lg:w-[50%]'>Send</button>
               </form>
