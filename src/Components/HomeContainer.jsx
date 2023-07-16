@@ -1,17 +1,21 @@
-import React, {useEffect, useRef} from 'react'
-import Typed from 'typed.js'
-import { Link } from 'react-scroll'
-import me from '../Images/me.png'
+import React, { useEffect, useRef } from "react"
+import Typed from "typed.js"
+import { Link } from "react-scroll"
+import me from "../Images/me.png"
 
 const HomeContainer = () => {
-  const element  = useRef(null)
+  const element = useRef(null)
 
   useEffect(() => {
     const typed = new Typed(element.current, {
-      strings: ["Hi, my name is Hamza", "I'm a Frontend Developer...", "thanks for being here."],
+      strings: [
+        "Hi, my name is Hamza",
+        "I'm a Frontend Developer...",
+        "thanks for being here.",
+      ],
       typeSpeed: 50,
-			backSpeed: 40,
-			loop: false,
+      backSpeed: 40,
+      loop: false,
       showCursor: false,
     })
 
@@ -68,7 +72,7 @@ const HomeContainer = () => {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default HomeContainer

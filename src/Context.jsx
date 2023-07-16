@@ -1,4 +1,4 @@
-import React, {createContext, useEffect, useState} from "react"
+import React, { createContext, useEffect, useState } from "react"
 import slides from "./Utils/slides"
 
 const Context = createContext()
@@ -49,4 +49,4 @@ function ContextProvider(props) {
   )
 }
 
-export {Context, ContextProvider}
+export { Context, ContextProvider }

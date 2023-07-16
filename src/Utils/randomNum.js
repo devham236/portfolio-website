@@ -1,4 +1,3 @@
-
 export default function genRandomNum() {
-    return Math.floor(Math.random() * 1000)
+  return Math.floor(Math.random() * 1000)
 }

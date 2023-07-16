@@ -1,18 +1,19 @@
-import React, { useState, useContext } from 'react'
-import { Context } from '../Context'
-import slides from '../Utils/slides'
-import genRandomNum from '../Utils/randomNum'
-import twcss from '../Images/twcss.png'
-import fb from '../Images/fb.png'
-import react from '../Images/react.png'
-import jest from '../Images/jest.png'
-import vite from '../Images/vite.png'
-import html from '../Images/html.png'
-import css from '../Images/css.png'
-import js from '../Images/js.png'
+import React, { useState, useContext } from "react"
+import { Context } from "../Context"
+import slides from "../Utils/slides"
+import genRandomNum from "../Utils/randomNum"
+import twcss from "../Images/twcss.png"
+import fb from "../Images/fb.png"
+import react from "../Images/react.png"
+import jest from "../Images/jest.png"
+import vite from "../Images/vite.png"
+import html from "../Images/html.png"
+import css from "../Images/css.png"
+import js from "../Images/js.png"
 
 const SkillsContainer = () => {
-  const {currentIndex, setCurrentIndex, prevSlide, nextSlide, goToSlide} = useContext(Context)
+  const { currentIndex, setCurrentIndex, prevSlide, nextSlide, goToSlide } =
+    useContext(Context)
 
   return (
     <div
@@ -24,12 +25,16 @@ const SkillsContainer = () => {
           <h1 className="lg:text-3xl sm:text-xl font-extrabold mb-1 dark:text-dark_tc">
             Skills
           </h1>
-          <p className="text-orange uppercase lg:text-xl sm:text-lg">and projects</p>
+          <p className="text-orange uppercase lg:text-xl sm:text-lg">
+            and projects
+          </p>
         </div>
         <div className="flex w-full h-full items-center justify-between sm:flex-col lg:flex-row">
           <div className="lg:w-[45%] sm:w-full">
             <div className="flex flex-col mb-3 text-center">
-              <p className="lg:text-lg sm:text-base font-bold dark:text-dark_tc">Hello again</p>
+              <p className="lg:text-lg sm:text-base font-bold dark:text-dark_tc">
+                Hello again
+              </p>
               <p className="dark:text-dark_tc sm:text-sm">
                 I am a Frontend Developer, skilled in/mainly using:
               </p>
@@ -37,22 +42,22 @@ const SkillsContainer = () => {
             <div className="flex w-full justify-between">
               <div className="lg:w-[150px] lg:h-[100px] sm:w-[100px] sm:h-[50px] bg-[#f1f1f1] dark:bg-[#141414] rounded-lg flex flex-col items-center justify-around hover:shadow-xl duration-300 cursor-pointer">
                 <div className="w-full h-[40%] flex">
-                  <div className='w-[50%] h-full'>
+                  <div className="w-[50%] h-full">
                     <img
-                    src={html}
-                    alt=""
-                    className="w-full h-full object-contain"
+                      src={html}
+                      alt=""
+                      className="w-full h-full object-contain"
                     />
                   </div>
-                  <div className='w-[50%] h-full'>
+                  <div className="w-[50%] h-full">
                     <img
-                    src={css}
-                    alt=""
-                    className="w-full h-full object-contain"
+                      src={css}
+                      alt=""
+                      className="w-full h-full object-contain"
                     />
                   </div>
                 </div>
-                <div className='w-[40%] h-[40%]'>
+                <div className="w-[40%] h-[40%]">
                   <img
                     src={js}
                     alt=""
@@ -78,22 +83,22 @@ const SkillsContainer = () => {
               </div>
               <div className="lg:w-[150px] lg:h-[100px] sm:w-[100px] sm:h-[50px] rounded-lg bg-[#f1f1f1] dark:bg-[#141414] flex flex-col items-center justify-around hover:shadow-xl duration-300 cursor-pointer">
                 <div className="w-full h-[40%] flex">
-                  <div className='w-[50%] h-full'>
+                  <div className="w-[50%] h-full">
                     <img
-                    src={fb}
-                    alt=""
-                    className="w-full h-full object-contain"
+                      src={fb}
+                      alt=""
+                      className="w-full h-full object-contain"
                     />
                   </div>
-                  <div className='w-[50%] h-full'>
+                  <div className="w-[50%] h-full">
                     <img
-                    src={vite}
-                    alt=""
-                    className="w-full h-full object-contain"
+                      src={vite}
+                      alt=""
+                      className="w-full h-full object-contain"
                     />
                   </div>
                 </div>
-                <div className='w-[40%] h-[40%]'>
+                <div className="w-[40%] h-[40%]">
                   <img
                     src={jest}
                     alt=""
@@ -134,7 +139,11 @@ const SkillsContainer = () => {
               ))}
             </div>
             <div className="absolute sm:-top-7 lg:-top-9">
-              <a href={slides[currentIndex].link} target='blank' className="font-bold lg:text-lg sm:text-base dark:text-dark_tc hover:underline">
+              <a
+                href={slides[currentIndex].link}
+                target="blank"
+                className="font-bold lg:text-lg sm:text-base dark:text-dark_tc hover:underline"
+              >
                 {slides[currentIndex].title}
               </a>
             </div>
@@ -152,7 +161,7 @@ const SkillsContainer = () => {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default SkillsContainer
