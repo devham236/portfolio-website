@@ -35,7 +35,9 @@ const HomeContainer = () => {
             className="lg:text-5xl sm:text-xl font-extrabold dark:text-dark_tc mb-2"
             ref={element}
           ></h1>
-          <p className="dark:text-dark_tc my-4">Welcome to my Website.</p>
+          <p className="dark:text-dark_tc my-4" role="paragraph">
+            Welcome to my Website.
+          </p>
           <Link
             to="contact"
             className="cursor-pointer"
@@ -54,7 +56,7 @@ const HomeContainer = () => {
             alt=""
             className="w-full h-full object-cover rounded-lg"
           />
-          <div className="absolute flex lg:flex-col lg:bottom-0 lg:-right-12">
+          <div className="absolute flex lg:flex-col lg:bottom-0 lg:-left-12">
             <a
               href="https://www.linkedin.com/in/hamzamirza-frontenddev/"
               target="blank"

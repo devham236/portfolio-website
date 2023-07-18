@@ -1,5 +1,4 @@
 import { fireEvent, screen, waitFor } from "@testing-library/react"
-import { describe, test } from "vitest"
 import Navbar from "./../../src/Components/Navbar"
 import renderWithWrappers from "../Utils/renderWithWrappers"
 import testRendersElements from "../Utils/testRendersElements"
@@ -29,7 +28,7 @@ describe("Toggle functionality", () => {
     expect(toggle.getAttribute("name")).toBe("light")
   })
 
-  test("darkMode os true/on when clicking toggle", () => {
+  test("darkMode is true/on when clicking toggle", () => {
     const toggle = screen.getByRole("toggle")
     fireEvent.click(toggle)
     expect(toggle.getAttribute("name")).toBe("dark")
