@@ -4,8 +4,8 @@ import slides from "./Utils/slides"
 const Context = createContext()
 
 function ContextProvider(props) {
-  const [darkMode, setDarkMode] = useState(() =>
-    JSON.parse(localStorage.getItem("darkmode"))
+  const [darkMode, setDarkMode] = useState(
+    () => JSON.parse(localStorage.getItem("darkmode")) || false
   )
   const [currentIndex, setCurrentIndex] = useState(0)
   const [sidebar, setSidebar] = useState(false)

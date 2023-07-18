@@ -19,6 +19,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             className="lg:text-xl sm:text-sm font-semibold cursor-pointer hover:text-orange  duration-200"
+            role="link"
           >
             Home
           </Link>
@@ -28,6 +29,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             className="lg:text-xl sm:text-sm font-semibold cursor-pointer hover:text-orange duration-300"
+            role="link"
           >
             Skills
           </Link>
@@ -37,15 +39,18 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             className="lg:text-xl sm:text-sm font-semibold cursor-pointer hover:text-orange duration-300"
+            role="link"
           >
             Contact
           </Link>
         </div>
         <div
-          className={`lg:w-[55px] lg:h-[30px] sm:w-[45px] sm:h-[25px] rounded-full bg-orange flex p-1 cursor-pointer duration-300 items-center justify-between ${
+          className={`lg:w-[55px] lg:h-[30px] sm:w-[45px] sm:h-[25px] rounded-full bg-orange flex flex-row p-1 cursor-pointer duration-300 items-center justify-between ${
             darkMode && "flex-row-reverse"
           }`}
           onClick={() => setDarkMode(!darkMode)}
+          role="toggle"
+          name={`${darkMode ? "dark" : "light"}`}
         >
           <div className="w-1/2 h-full rounded-full bg-white"></div>
           <i

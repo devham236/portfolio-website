@@ -7,4 +7,9 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ["typed.js", "uuidv4"],
   },
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./tests/setUpTests.js",
+  },
 })
