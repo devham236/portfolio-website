@@ -29,4 +29,9 @@ describe("HomeContainer Elements", () => {
   test("renders image", () => {
     testRendersElements("img")
   })
+
+  test("renders links", () => {
+    const links = screen.getAllByRole("link")
+    expect(links.length).toBeGreaterThan(0)
+  })
 })

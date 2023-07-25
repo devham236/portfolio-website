@@ -60,15 +60,20 @@ const HomeContainer = () => {
             <a
               href="https://www.linkedin.com/in/hamzamirza-frontenddev/"
               target="blank"
+              name="LinkedIn"
+              className="flex items-center opacity-50 hover:opacity-100 duration-300"
             >
-              <i className="fa-brands fa-linkedin text-3xl text-orange opacity-50 hover:opacity-100 duration-300 cursor-pointer"></i>
+              <i className="fa-brands fa-linkedin text-3xl text-orange  cursor-pointer"></i>
+              <p className="ml-2 text-orange">LinkedIn</p>
             </a>
             <a
               href="https://github.com/devham236"
               target="blank"
-              className="lg:mt-5 lg:ml-0 sm:ml-5"
+              name="Github"
+              className="lg:mt-5 lg:ml-0 sm:ml-5 flex items-center opacity-50 hover:opacity-100 duration-300"
             >
-              <i className="fa-brands fa-github text-3xl text-orange opacity-50 hover:opacity-100 duration-300 cursor-pointer"></i>
+              <i className="fa-brands fa-github text-3xl text-orange  cursor-pointer"></i>
+              <p className="ml-2 text-orange">Github</p>
             </a>
           </div>
         </div>
