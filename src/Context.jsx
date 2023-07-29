@@ -3,7 +3,7 @@ import slides from "./Utils/slides"
 
 const Context = createContext()
 
-function ContextProvider(props) {
+function ContextProvider({ children }) {
   const [darkMode, setDarkMode] = useState(
     () => JSON.parse(localStorage.getItem("darkmode")) || false
   )
@@ -44,7 +44,7 @@ function ContextProvider(props) {
         goToSlide,
       }}
     >
-      {props.children}
+      {children}
     </Context.Provider>
   )
 }
